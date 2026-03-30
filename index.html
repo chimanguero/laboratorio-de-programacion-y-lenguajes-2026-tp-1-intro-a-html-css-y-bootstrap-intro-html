@@ -10,11 +10,30 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <!-- Navbar (COMPLETAR: agregar logo, links activos, menú colapsable) -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
-            <!-- TODO: agregar toggler y nav-items -->
+            <!-- Agrego logo -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" width="40" height="40" class="me-2"> Mi Blog
+            </a>
+            <!-- Agrego toggler y nav-items -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarTop">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
