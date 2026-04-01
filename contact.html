@@ -45,7 +45,7 @@
                     <h1 class="mb-4">Contacto</h1>
 
                     <form id="contactForm" novalidate>
-                        <!-- Campo nombre (COMPLETAR: validación) -->
+                        <!-- Campo nombre -->
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombre *</label>
                             <input type="text" class="form-control" id="name" name="name" required>
@@ -54,7 +54,7 @@
                             </div>
                         </div>
 
-                        <!-- Campo email (COMPLETAR) -->
+                        <!-- Campo email -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Email *</label>
                             <input type="email" class="form-control" id="email" name="email" required>
@@ -63,13 +63,16 @@
                             </div>
                         </div>
 
-                        <!-- Campo teléfono (COMPLETAR: opcional) -->
+                        <!-- Campo teléfono -->
                         <div class="mb-3">
                             <label for="phone" class="form-label">Teléfono</label>
                             <input type="tel" class="form-control" id="phone" name="phone">
+                            <div class="invalid-feedback">
+                                Por favor ingresa un número de teléfono válido.
+                            </div>
                         </div>
 
-                        <!-- Campo mensaje (COMPLETAR: minlength) -->
+                        <!-- Campo mensaje -->
                         <div class="mb-3">
                             <label for="message" class="form-label">Mensaje *</label>
                             <textarea class="form-control" id="message" name="message" rows="5" required minlength="10"></textarea>
